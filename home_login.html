@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation with JavaScript</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/animate.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/klelogo.png" width="30%">
+        <h1>Online Feedback System</h1>
+    </header>
+    <div id="wrapper">
+        <div class="form_section animated fadeIn">
+            <form name="f1">
+                <div id="select_div">
+                    <label><big>Login as</big></label> <br>
+                    <select class="textInput" name="login_id">
+                        <option value="faculty">faculty</option>
+                        <option value="coordinator">coordinator</option>
+                        <option value="student">student</option>
+                    </select>
+                </div>
+                <div id="username_div">
+                    <label><big>Username</big></label> <br>
+                    <input type="text" name="username" class="textInput" required>
+                    <div id="name_error"></div>
+                </div>
+                <div id="password_div">
+                    <label><big>Password</big></label> <br>
+                    <input type="password" name="password" class="textInput" required>
+                    <div id="password_error"></div>
+                </div>
+                <div>
+                    <a class="fgpwd" href="forgotpw.html">Forgot Password</a><br>
+                    <input type="button" id="loginbtn" onclick="loginvalid()" name="register" value="Login" class="btn">
+                </div>
+                <div id="fgpwd">
+                    <a class="regbtn" href="register.html">REGISTER</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="js/loginvalid.js"></script>

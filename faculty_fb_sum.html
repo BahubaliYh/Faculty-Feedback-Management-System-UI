@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style_stud.css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <script src="canvasjs.min.js"></script>
+    <script>
+        window.onload = function() {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Feedback Report"
+                },
+                backgroundColor: '#ffffff',
+                data: [{
+                    type: "column",
+                    startAngle: 240,
+                    yValueFormatString: "##0.00\"\"",
+                    indexLabel: " {y}",
+                    dataPoints: [{
+                        y: 7,
+                        label: "1"
+                    }, {
+                        y: 6.8,
+                        label: "2"
+                    }, {
+                        y: 7,
+                        label: "3"
+                    }, {
+                        y: 5.5,
+                        label: "4"
+                    }, {
+                        y: 6.5,
+                        label: "5"
+                    }, {
+                        y: 5,
+                        label: "6"
+                    }, {
+                        y: 8,
+                        label: "7"
+                    }, {
+                        y: 7,
+                        label: "8"
+                    }, {
+                        y: 6,
+                        label: "9"
+                    }, {
+                        y: 7,
+                        label: "10"
+                    }, {
+                        y: 7.8,
+                        label: "11"
+                    }, {
+                        y: 8,
+                        label: "12"
+                    }, {
+                        y: 7,
+                        label: "13"
+                    }, {
+                        y: 6.2,
+                        label: "14"
+                    }]
+                }]
+            });
+            chart.render();
+        }
+    </script>
+
+
+
+
+</head>
+
+<body style="background:#f1f2f6;">
+    <header>
+         <img src="img/klelogo.png" width="30%">
+        <h1>Online Feedback System</h1>
+        <a id="logout" href="home_login.html">Log Out</a>
+    </header>
+
+    <div class="container_fb">
+        <p class="animated fadeInLeft" style="color:#5A7AFA; font-size:50px; font-family:sans-serif;">Summative Feedback Report</p>
+        <a class="animated fadeInRight" id="prev_btn" href="faculty_home.html">My Subjects</a>
+        <table class="animated flipInX">
+
+            <tr>
+                <td>Division</td>
+                <td>Subject</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>Total</td>
+                <td>%Average</td>
+                <td>NO.Of.Students</td>
+            </tr>
+            <tr>
+                <td>4th</td>
+                <td>Data Mining</td>
+                <td>7.2</td>
+                <td>7.2</td>
+                <td>8</td>
+                <td>8</td>
+                <td>7.1</td>
+                <td>7.5</td>
+                <td>8</td>
+                <td>8</td>
+                <td>7.2</td>
+                <td>7</td>
+                <td>6.8</td>
+                <td>7</td>
+                <td>8</td>
+                <td>8</td>
+                <td>85</td>
+                <td>6.5</td>
+                <td>58</td>
+            </tr>
+        </table>
+
+        <div class="container_fb1">
+            <div id="chartContainer" style="height: 500px;"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

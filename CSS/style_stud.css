@@ -1,0 +1,408 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #636e72;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    padding: 1px
+}
+
+header h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+header img {
+    float: left;
+}
+
+div.gallery {
+    margin-left: 15px;
+    float: left;
+    width: 250px;
+    height: 500px;
+    text-align: center;
+}
+
+.gallery img {
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    margin-top: 0px;
+    padding: 15px;
+    text-align: center;
+    background: #dfe6e9;
+    color: black;
+}
+
+.wrapper {
+    margin: auto;
+    margin-top: 20px;
+}
+
+#valbtn {
+    text-decoration: none;
+    width: 98.6%;
+    border: none;
+    color: black;
+    background-color: #0984e3;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.regbtn {
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+    color: white;
+    background-color: #FD7414;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.questions {
+    width: 95%;
+    margin: auto;
+}
+
+#allqns {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#allqns td,
+#allqns th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#allqns input {
+    font-size: 30px;
+}
+
+#allqns h2 {
+    font-weight: none;
+    font-size: 20px;
+}
+
+table {
+    width: 80%;
+}
+
+#allqns .ans {
+    margin-bottom: 20px;
+}
+
+.qns {
+    color: white;
+    background: #2d3436;
+}
+
+.ans {
+    background: #b2bec3;
+}
+
+.eachqn {
+    margin-top: 20px;
+}
+
+
+/* The container */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+#logout {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    float: right;
+    margin-top: -80px;
+    margin-right: 10px;
+    background: #ffffff;
+    padding: 10px;
+    border: 2px solid #57606f;
+    border-radius: 8px;
+}
+
+#logout:hover {
+    color: white;
+    background: #646363;
+    border: 2px solid white;
+}
+
+
+/* faculty css */
+
+.container1 {
+    text-align: center;
+}
+
+.container1 table {
+    margin: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.container1 td,
+th {
+    border: 1px solid #111111;
+    text-align: left;
+    padding: 20px;
+}
+
+.container1 th {
+    color: white;
+    background: #57606f;
+}
+
+#fb_btn {
+    text-decoration: none;
+    color: #1186F3;
+}
+
+.container_fb {
+    text-align: center;
+}
+
+.container_fb table {
+    margin: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.container_fb td,
+th {
+    color: white;
+    background: #909090;
+    border: 1px solid #F8F7F7;
+    text-align: left;
+    padding: 20px;
+}
+
+.container_fb1 {
+    margin-top: 20px;
+}
+
+#chartContainer {
+    width: 90%;
+    margin: auto;
+}
+
+#prev_btn {
+    color: black;
+    margin-top: -100px;
+    text-decoration: none;
+    font-size: 25px;
+    float: right;
+    margin-right: 10px;
+    background: #ffa502;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#prev_btn:hover {
+    color: white;
+    background: #161616;
+}
+
+#prev_btn_cmp {
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 10px;
+    background: #ffa502;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#prev_btn_cmp:hover {
+    color: white;
+    background: #161616;
+}
+
+.buttons_ide {
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-bottom: 10px;
+}
+
+.buttons_ide button {
+    font-size: 20px;
+    background: #FFFFFF;
+    border: 3px solid #1e90ff;
+    padding: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.buttons_ide button:hover {
+    color: white;
+    background: #1e90ff;
+}
+
+.crt_qns {
+    text-align: center;
+}
+
+.crt_qns table {
+    margin: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    background: #ff7f50;
+}
+
+.crt_qns td,
+th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 20px;
+}
+
+.crt_qns th {
+    text-align: center;
+    color: white;
+    background: #ffa502;
+}
+
+.comp_table table {
+    color: #2C3A47;
+    width: 90%;
+    margin: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    background: #a5b1c2;
+}
+
+.comp_table td,
+th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 20px;
+}
+
+.comp_table th {
+    text-align: center;
+    color: white;
+    background: #4b6584;
+}
+
+
+#oddSem{
+    background-color: #FDBA08;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#evenSem{
+    background-color: #FDBA08;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fac_details{
+    color: #34495e;
+    font-size: 18px;
+    background-color: #dcdde1;
+    width: 70%;
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 15px solid #f1c40f;
+    border-radius: 0px 40px 40px 0px;
+
+}
+.fac_details span{
+    color: #3498db;
+}

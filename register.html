@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Feedback System</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/animate.css">
+</head>
+
+<body onload="randomNums()">
+    <header>
+        <img src="img/klelogo.png" width="30%">
+        <h1>Online Feedback System</h1>
+    </header>
+    <div class="container">
+        <div class="login animated fadeIn">
+            <form name="f1">
+                <input type="text" class="Login_input" placeholder="Enter name" name="uname"><br>
+
+                <input type="text" class="Login_input" name="email" placeholder="Enter your Email" onfocus="unamevalid()"><br>
+
+                <input type="email" class="Login_input" name="pwd" placeholder="Enter password" onfocus="ValidateEmail()"><br>
+
+                <input type="password" class="Login_input" name="pwd2" placeholder="Re-enter your password" onfocus="pwdvalid()"><br>
+
+                <input type="date" class="Login_input" name="dob" placeholder="Enter your DOB" onfocus="pwdvalid2()"><br>
+
+                <input type="number" class="Login_input" name="mob" onfocus="dobvalid()" placeholder="Enter mobile number"><br>
+                <label>Enter the Role Of Registration</label><br>
+                <select class="Login_input">
+		  <option value="faculty">faculty</option>
+		  <option value="coordinator">coordinator</option>
+		  <option value="student">student</option>
+		</select><br>
+                <strong style="margin-bottom: 50px;">Answer this question</strong>
+
+                <p style="color: blue;" id="qn"></p>
+                <input style="margin-bottom: 30px;" type="text" onfocus="mobvalid()" name="nip" id="ip"><br>
+                <input type="button" class="regbtn" value="Register" onclick="qnans();" />
+            </form>
+        </div>
+
+    </div>
+
+    <script src="js/loginvalid.js"></script>
+</body>
+
+</html>
